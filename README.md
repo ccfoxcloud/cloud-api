@@ -60,7 +60,7 @@
 
 - 使用您的一级域名下的二级域名，比如 mfutures.xxx.com,
 - ws 域名一致（ex:主域名`ccfox.com`,那么 ws 的域名应该为 `xxx.ccfox.com` ）
-- 在服务器上配置 nginx，参考项目根目录[nginx_cloud.conf](./nginx_cloud.conf)
+- 在服务器上配置 nginx，参考前端项目根目录[nginx_cloud.conf]([./nginx_cloud.conf](https://github.com/ccfox-com/cloud/blob/master/nginx_cloud.conf))
   - 配置静态资源
   - api 代理,
   - ws 代理

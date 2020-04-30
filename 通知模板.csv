@@ -1,0 +1,33 @@
+LOCALE,SUBJECT,CONTENT,CREATE_TIME,UPDATE_TIME
+en_US,【CCFOX】Forced Liquidation Alert," Your account margin is less than 70%, please pay attention to the risk. You can increase the margin or reduce the leverage to avoid liquidation.",2019/4/24 16:16,2019/4/24 16:16
+zh_CN,强平预警, 您的账户保证金不足70%，请注意强平风险。您可追加保证金或降低杠杆倍数以免发生爆仓。,2020/1/3 16:16,2020/1/3 16:16
+en_US,【CCFOX】强平预警," Your account margin is less than 70%, please pay attention to the risk. You can increase the margin or reduce the leverage to avoid liquidation.",2019/4/24 16:16,2019/4/24 16:16
+zh_CN,强平预警, 您的账户保证金不足70%，请注意强平风险。您可追加保证金或降低杠杆倍数以免发生爆仓。,2020/1/3 16:16,2020/1/3 16:16
+en_US,【CCFOX】强平预警, Your $symbol$ contract has a margin of less than 70%. Please pay attention to the risk. You can increase the margin or reduce the leverage to avoid liquidation.,2019/4/24 16:16,2019/4/24 16:16
+zh_CN,强平预警, 您的 $symbol$ 合约 保证金不足70%，请注意强平风险。您可追加保证金或降低杠杆倍数以免发生爆仓。,2020/1/3 16:16,2020/1/3 16:16
+en_US,【CCFOX】Forced Liquidation Alert, Your $symbol$ contract has a margin of less than 70%. Please pay attention to the risk. You can increase the margin or reduce the leverage to avoid liquidation.,2019/4/24 16:16,2019/4/24 16:16
+zh_CN,强平预警, 您的 $symbol$ 合约 保证金不足70%，请注意强平风险。您可追加保证金或降低杠杆倍数以免发生爆仓。,2020/1/3 16:16,2020/1/3 16:16
+en_US,【CCFOX】Forced Liquidation,【CCFOX】Your full positions have been forced liquidated due to insufficient margin in your account balance.,2019/4/24 16:16,2019/4/24 16:16
+zh_CN,强平通知, 您的全仓仓位因账户余额小于维持保证金而被系统强制平仓,2020/1/3 16:16,2020/1/3 16:16
+en_US,【CCFOX】强平通知,【CCFOX】Your full positions have been forced liquidated due to insufficient margin in your account balance.,2019/4/24 16:16,2019/4/24 16:16
+zh_CN,强平通知, 您的全仓仓位因账户余额小于维持保证金而被系统强制平仓,2020/1/3 16:16,2020/1/3 16:16
+en_US,【CCFOX】Forced Liquidation,【CCFOX】Your $symbol$ contract  was forced to close  due to the margin was less than maintenance margin.,2019/4/24 16:16,2019/4/24 16:16
+zh_CN, 强平通知, 您的 $symbol$ 合约 因保证金小于维持保证金而被系统强制平仓,2020/1/3 16:16,2020/1/3 16:16
+en_US,【CCFOX】强平通知,【CCFOX】Your $symbol$ contract  was forced to close  due to the margin was less than maintenance margin.,2019/4/24 16:16,2019/4/24 16:16
+zh_CN, 强平通知, 您的 $symbol$ 合约 因保证金小于维持保证金而被系统强制平仓,2020/1/3 16:16,2020/1/3 16:16
+en_US,【CCFOX】Forced Reduction,【CCFOX】Your $futuresContract$ contract position has been automatically lightened due to the trigger system reduction mechanism.,2019/4/24 16:16,2019/4/24 16:16
+zh_CN, 强减通知, 您的 $futuresContract$ 合约持仓仓位因触发系统强减机制已被自动减仓。,2020/1/3 16:16,2020/1/3 16:16
+en_US,【CCFOX】强减通知,【CCFOX】Your $futuresContract$ contract position has been automatically lightened due to the trigger system reduction mechanism.,2019/4/24 16:16,2019/4/24 16:16
+zh_CN, 强减通知, 您的 $futuresContract$ 合约持仓仓位因触发系统强减机制已被自动减仓。,2020/1/3 16:16,2020/1/3 16:16
+en_US,【CCFOX】Forced Reduction,【CCFOX】Your cross position has been auto-reduced due to our Auto-Reduction-System.,2019/4/24 16:16,2019/4/24 16:16
+zh_CN, 强减通知, 您的全仓仓位因触发系统强减机制已被自动减仓。,2020/1/3 16:16,2020/1/3 16:16
+en_US,【CCFOX】强减通知,【CCFOX】Your cross position has been auto-reduced due to our Auto-Reduction-System.,2019/4/24 16:16,2019/4/24 16:16
+zh_CN, 强减通知, 您的全仓仓位因触发系统强减机制已被自动减仓。,2020/1/3 16:16,2020/1/3 16:16
+en_US,【CCFOX】Auto Reduction ,"【CCFOX】Your cross position has been auto-reduced, please check in time.",2019/4/24 16:16,2019/4/24 16:16
+zh_CN, 自动减仓提醒, 您的持仓已被自动减仓，请及时关注您的仓位变化。,2020/1/3 16:16,2020/1/3 16:16
+en_US,【CCFOX】自动减仓提醒,"【CCFOX】Your cross position has been auto-reduced, please check in time.",2019/4/24 16:16,2019/4/24 16:16
+zh_CN, 自动减仓提醒, 您的全仓持仓已被自动减仓，请及时关注您的仓位变化。,2020/1/3 16:16,2020/1/3 16:16
+en_US,【CCFOX】自动减仓提醒,"【CCFOX】Your cross position has been auto-reduced, please check in time.",2019/4/24 16:16,2019/4/24 16:16
+zh_CN, 自动减仓提醒, 您的 $futuresContract$ 合约持仓已被自动减仓，请及时关注您的仓位变化。,2020/1/3 16:16,2020/1/3 16:16
+en_US,【CCFOX】Auto Reduction ,"【CCFOX】Your cross position has been auto-reduced, please check in time.",2019/4/24 16:16,2019/4/24 16:16
+zh_CN, 自动减仓提醒, 您的 $futuresContract$ 合约持仓已被自动减仓，请及时关注您的仓位变化。,2020/1/3 16:16,2020/1/3 16:16

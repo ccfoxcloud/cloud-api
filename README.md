@@ -51,28 +51,8 @@
 
 ## 如何对接
 
-- [前端对接](./doc/Docking.md)
-- [持仓分享](./doc/SharePosi.md)
+- [前端对接](https://github.com/ccfox-com/cloud)
 - [服务端对接](./doc/api.md)
 - [通知模板](通知模板.csv)
-
-## 前端项目部署
-
-- 使用您的一级域名下的二级域名，比如 mfutures.xxx.com,
-- ws 域名一致（ex:主域名`ccfox.com`,那么 ws 的域名应该为 `xxx.ccfox.com` ）
-- 在服务器上配置 nginx，参考前端项目根目录[nginx_cloud.conf]([./nginx_cloud.conf](https://github.com/ccfox-com/cloud/blob/master/nginx_cloud.conf))
-  - 配置静态资源
-  - api 代理,
-  - ws 代理
-  - 修改相应域名
-- 配置 nginx 转发时，请修改转发机器的本地 hosts，将 api.ccfox.com 和 futurews.ccfox.com 解析到 ccfox 的源站接入点上。源站接入点 ip 和白名单，请找 ccfox 的网络管理员进行配置
-- 强烈推荐
-  - 用云服务上的 slb 来做 nginx 代理的方法
-  - 并通过多节点部署实现高可用
-
-**注意**
-
-- 若 socket 配置出现跨域，可在 nginx 代理部分添加跨域头
-- ios 的 webview 容器 wkwebview，会有很严重的跨域问题，务必遵守二级域名规则。
 
 ## [QA](./doc/QA.md)

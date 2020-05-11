@@ -18,3 +18,16 @@
 
 7.  Q：如何修改模拟币种
     A：在前端项目的.env,.env.test 里面配置 VUE_APP_MOCK_SYMBOL=<币种 Symbol>
+
+8.  Q：添加项目入口 (eg:/contract)
+    A：在前端项目的.env.cloud 里面配置 PUBLIC_URL=/contract,REACT_APP_BASENAME=/contract
+       在项目的 nginx_cloud.conf 中有两处
+       `location / {
+            try_files $uri $uri/ /index.html;
+       }`
+       在这两处下面加上location
+       `localtion /contract {
+           index index.html;
+           try_files $uri $uri/ /contract/index.html;
+        }
+`

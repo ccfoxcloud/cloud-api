@@ -5,6 +5,7 @@
     - [签名步骤](#%e7%ad%be%e5%90%8d%e6%ad%a5%e9%aa%a4)
     - [签名demo](#%e7%ad%be%e5%90%8ddemo)
   - [基础接口](#%e5%9f%ba%e7%a1%80%e6%8e%a5%e5%8f%a3)
+  - [资产权益](#%e5%9f%ba%e7%a1%80%e6%8e%a5%e5%8f%a3)
   - [API接口](#api%e6%8e%a5%e5%8f%a3)
     - [子账号注册](#%e5%ad%90%e8%b4%a6%e5%8f%b7%e6%b3%a8%e5%86%8c)
     - [子账号登录](#%e5%ad%90%e8%b4%a6%e5%8f%b7%e7%99%bb%e5%bd%95)
@@ -150,6 +151,52 @@ API Key 包括以下两部分
 | ├─ clearPriceInterval    | number    | 必须     |        | 结算价计算间隔                                           |                   |
 | ├─ deliveryPriceInterval | number    | 必须     |        | 交割价计算间隔                                           |                   |
 | ├─ varietyId             | number    | 必须     |        | 品种ID，标的ID                                           |                   |
+
+## 资产权益
+
+币种接口： https://apitest.ccfox.com/futureAsset/queryAccountEquity
+
+- 基本信息
+
+**Path：** /futureAsset/queryAccountEquity
+
+**Method：** GET
+
+**接口描述：**
+
+### 请求参数
+### Query：
+
+| 参数名称 | 是否必须 | 示例                      | 备注                                                         |
+| :------- | :------- | :------------------------ | :----------------------------------------------------------- |
+| legalSymbol   | 是       | CNY | 法币标识，默认：CNY|
+
+### 返回数据
+
+| 名称                     | 类型      | 是否必须 | 默认值 | 备注                                                     | 其他信息          |
+| ------------------------ | --------- | -------- | ------ | -------------------------------------------------------- | ----------------- |
+| code             | number     | 必须   |        | 0：成功，其他失败 | |
+| msg              | string     | 必须   |        | 消息 | |
+| data             | object []  | 必须   |        | 数据集合 | |
+| ├─accountType    | number     | 必须   |        | 账户类型，1现货，2期货，5提币，10活动 | 合约云用户只有：期货账户：2|
+| ├─totalAccountEquity    | number     | 必须   ||账户总权益，即btc估值 | |
+| ├─simulationAvailableMargin    | number     | 必须   ||模拟币可用保证金 | |
+| ├─totalLegalValue    | object     | 必须   ||法币价值 | |
+| ├├─value    | number     | 必须   ||总法币价值 | |
+| ├├─symbol    | string     | 必须   ||法币标识 | |
+| ├─currencyAssetList    | object     | 必须   ||货币资产列表 | |
+| ├├─currencyId    | number     | 必须   ||货币ID | |
+| ├├─accountEquity    | number     | 必须   ||该币种账户权益 | |
+| ├├─floatProfitLoss    | number     | 必须   ||浮动盈亏 | |
+| ├├─availableMargin    | number     | 必须   ||可用保证金 | |
+| ├├─initMargin    | number     | 必须   ||持仓占用保证金 | |
+| ├├─currentCloseProfitLoss    | number     | 必须   ||当日已实现盈亏 | |
+| ├├─totalLeverageLevel    | number     | 必须   ||整体杠杆水平 | |
+| ├├─frozenForTrade    | number     | 必须   ||委托占用保证金，现货也有该字段 | |
+| ├├─available    | number     | 必须   ||可用余额，除期货现货外 | |
+| ├├─locked    | number     | 必须   ||锁定金额，除期货、现货外 | |
+| ├├─btcValuation    | number     | 必须   ||btc估值，除期货外账户有该字段 | |
+| ├├─totalBalance    | number     | 必须   ||账户余额，现货 | |
 
 
 
@@ -636,7 +683,7 @@ API Key 包括以下两部分
           "trigger_type": 1
       }
       // message_type 消息类型，6001：通知类消息
-      //  id           消息ID
+      //  id           产生该消息时的时间戳（微秒），可用于业务去重
       //  account_id   子用户ID
       //  contract_id  合约ID, 0:全仓，>0:特定合约
       //  side         买卖方向，1：买，-1：卖

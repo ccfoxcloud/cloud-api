@@ -693,12 +693,12 @@ API Key 包括以下两部分
    配资到账消息格式：
      ```
       {
-        "messageType":"1001",          #消息ID
-        "id":125,                      #配资ID,
-        "userId":1,                    #用户ID
-        "currencyId":1,                #配资货币ID
-        "lendingNum":200,              #配资数量
-        "time":154804153000            #时间
+        "message_type":"1001",          #消息ID
+        "id":125,                       #配资ID,
+        "user_id":1,                    #用户ID
+        "currency_id":1,                #配资货币ID
+        "lending_num":200,              #配资数量
+        "time":154804153000             #时间
       }
      ```
    - 通知类消息说明  
@@ -706,10 +706,10 @@ API Key 包括以下两部分
   
      ```
       {
-        "messageType":"1002"         #消息ID
+        "message_type":"1002"         #消息ID
         "id":125,                    #配资ID,
-        "userId":1,                  #用户ID
-        "currencyId":1,              #配资货币
+        "user_id":1,                  #用户ID
+        "currency_id":1,              #配资货币
         "coin":200.090,              #当前余额
         "time":154804153000          #时间
       }
@@ -719,12 +719,12 @@ API Key 包括以下两部分
   
      ```
       {
-        "messageType":"1003"         #消息ID
-        "id":125,                    #配资ID,
-        "userId":1,                  #用户ID
-        "currencyId":1,              #配资货币
-        "coin":200.090,              #当前余额
-        "time":154804153000          #时间
+        "message_type":"1003"         #消息ID
+        "id":125,                     #配资ID,
+        "user_id":1,                  #用户ID
+        "currency_id":1,              #配资货币
+        "coin":200.090,               #当前余额
+        "time":154804153000           #时间
       }
      ```
 

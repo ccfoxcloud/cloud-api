@@ -670,7 +670,7 @@ API Key 包括以下两部分
   - 说明
     <br>消息队列MQ主要存放B端子账号进行期货交易时产生的通知类消息。B端在接入时，MQ对应的配置需与交易所对接。</br>
    - 通知类消息说明
-   消息格式：
+   强平强减强平预警消息格式：
      ```
       {
           "message_type": 6001,
@@ -733,7 +733,8 @@ API Key 包括以下两部分
       以下是MQ消费配置展示列,如果需要，联系我们
       
       ```java
-        # 消费组ID
+        # 消费组ID 
+        # 强平预警强平强减通知类消息group-id: GID_broker_notice, 配资到账、配资强平预警、配资强平通知类消息group-id: GID_broker_lending
         group-id: **********
         # 访问公钥匙
         access-key: **********
@@ -746,6 +747,7 @@ API Key 包括以下两部分
         # 消息主题
         topic: **********
         # 消息标签
+        # 强平预警强平强减通知类消息tags: TG_broker_notice, 配资到账、配资强平预警、配资强平通知类消息tags: broker-lending-msg
         tags:**********
       ```
   

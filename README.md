@@ -59,7 +59,7 @@
 
 1. 确认一下需要的合约列表,反馈给ccfox
 2. 向ccfox索要需要在代码里配置的B端合作商标识
-3. 在前端项目里将合作商标识配置到.enc.cloud里的REACT_APP_BROKERUUID
+3. 在前端项目里将合作商标识配置到.env.cloud里的REACT_APP_BROKERUUID
 4. 后续合约列表有变更，联系ccfox
 
 ## QA

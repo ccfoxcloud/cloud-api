@@ -22,8 +22,8 @@
 
 # API对接
 
-- 测试环境地址 https://apitest.ccfox.com/
-- 生产环境地址 https://api.ccfox.com/
+- 生产环境地址：请找ccfox运营人员获取生产环境接入地址。
+- 测试：使用生产环境的 模拟币种cusd完成测试
 
 ## 签名
 

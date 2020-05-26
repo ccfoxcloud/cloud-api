@@ -664,8 +664,8 @@ API Key 包括以下两部分
 | ├──startDate        | number | 必须     |        | 开始时间，最近更新日期时间，每天23：45：00更新 |          |
 | ├──endDate          | number | 必须     |        | 结束日期，9999-12-13                           |          |
 
-
-​	      
+NOTE: 资产 = totalMoney + closeProfitLoss
+	      
 ## B端mq对接
 
   - 说明

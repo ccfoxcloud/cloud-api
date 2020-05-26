@@ -277,11 +277,11 @@ API Key 包括以下两部分
 | code             | number | 必须     |        | 返回code（0：成功  非0：失败） |          |
 | msg              | string | 必须     |        | 返回消息                       |          |
 | data             | object | 必须     |        |                                |          |
-| ├─ access_token  | string | 必须     |        | token                          |          |
+| ├─ access_token  | string | 必须     |        | 访问令牌                        | 合约云对接只关注该字段         |
 | ├─ token_type    | string | 必须     |        | token类型                      |          |
-| ├─ refresh_token | string | 必须     |        | 刷新token                      |          |
+| ├─ refresh_token | string | 必须     |        | 更新令牌                      |          |
 | ├─ expires_in    | string | 必须     |        | 有效时间：毫秒为单位           |          |
-| ├─ scope         | string | 必须     |        |                                |          |
+| ├─ scope         | string | 必须     |        | 权限范围                               |          |
 | ├─ userId        | number | 必须     |        | 用户id                         |          |
 
 ### 查询子账户期货历史委托

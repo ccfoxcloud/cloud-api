@@ -57,7 +57,7 @@
 
 **_NOTE:_**
 
-[前端对接](https://github.com/ccfox-com/cloud)这里是 GitHub 的私仓，需要先注册 GitHub 账号，再找 ccfox 技术对接人员提交表单申请权限，ccfox 相关人员处理完之后才能访问并拉取相关代码。
+[前端对接](https://github.com/ccfox-com/cloud)这里是 GitHub 的私仓，如果没有 GitHub 账号的话需要先注册，再找 ccfox 技术对接人员提交表单（主要是提交 GitHub 账号）申请权限，ccfox 相关人员处理完之后才能访问并拉取相关代码。
 
 ## 合约列表配置事宜
 

@@ -51,9 +51,13 @@
 
 ## 如何对接
 
-- [前端对接](https://github.com/ccfox-com/cloud)
+- [前端对接](https://github.com/ccfox-com/cloud)(GitHub 私仓，需要先申请 GitHub 权限)
 - [服务端对接](./doc/api.md)
 - [通知模板](通知模板.csv)
+
+```Note
+[前端对接](https://github.com/ccfox-com/cloud)这里是 GitHub 的私仓，需要先注册 GitHub 账号，再找 ccfox 技术对接人员提交表单申请权限，ccfox 相关人员处理完之后才能访问并拉取相关代码。
+```
 
 ## 合约列表配置事宜
 

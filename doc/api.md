@@ -281,7 +281,7 @@ API Key 包括以下两部分
 | ├─ access_token  | string | 必须     |        | 访问令牌                        | 合约云对接只关注该字段         |
 | ├─ token_type    | string | 必须     |        | token类型                      |          |
 | ├─ refresh_token | string | 必须     |        | 更新令牌                      |          |
-| ├─ expires_in    | string | 必须     |        | 有效时间：毫秒为单位           |          |
+| ├─ expires_in    | string | 必须     |        | 有效时间：秒为单位           |          |
 | ├─ scope         | string | 必须     |        | 权限范围                               |          |
 | ├─ userId        | number | 必须     |        | 用户id                         |          |
 

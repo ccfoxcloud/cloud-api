@@ -26,6 +26,10 @@
   - 接口地址（域名）：https://brokerapi.ccfox.com
 - 测试环境地址：使用生产环境的 模拟币种 cusd 完成测试
 
+## 关于字段类型为 number 的约定
+
+除了那种字段名为 xxxID、xxxCOUNT 等一眼就知道显然是 int 或 bigint 的以外，所有标明为 number 类型的字段，处理时请都当作 decimal 来接收处理。
+
 ## 签名
 
 ### 说明

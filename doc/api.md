@@ -716,8 +716,7 @@ NOTE: 资产 = totalMoney + closeProfitLoss
       }
      ```
   - 通知类消息说明 
-  配资预警消息格式：
-  
+   配资预警消息格式：
      ```
       {
         "message_type":"1003"         #消息ID
@@ -728,6 +727,34 @@ NOTE: 资产 = totalMoney + closeProfitLoss
         "time":154804153000           #时间，毫秒
       }
      ```
+   - 通知类消息说明 
+    条件委托触发消息格式：
+  
+     ```
+      {
+	"conditionOrderId": "101591010830537061",	#条件委托ID
+	"userId": 274,					#用户ID
+	"contractId": 1000000,				#合约ID
+	"quantity": 999999,				#委托数量
+	"side": -1,					#买卖方向，1:买，-1：卖
+	"orderType": 3,					#委托类型，1-限价；3-市价
+	"orderPrice": null,				#委托价,	orderType：市价时为null			
+	"positionEffect": 2,				#开平标志，1开仓，2平仓
+	"marginType": 1,				#保证金类型，1全仓，2逐仓
+	"marginRate": 0.0100000000,			#保证金率,	杠杆倍数=1/marginRate
+	"triggerType": 3,				#触发类型，2：成交价，3：指数价，4：标记价
+	"curtPrice": 1000,				#下单时当前价
+	"triggerPrice": 10167.5,			#预设触发价格
+	"realTriggerPrice": 10168,			#真实触发价格
+	"conditionOrderType": 1,			#0：普通条件单，1：止盈条件单，2：止损条件单
+	"uuid": 11111,					#止盈止损-联合标识
+	"code": 0,					#执行结果码,0:下单成功，非0：失败
+	"orderId": "11591011422531540",			#委托ID
+	"status": 2,					#状态，1: 未触发，2：下单成功，3：下单失败，4：撤销
+	"updateTime": 1591087207078,			#更新时间
+	"createTime": 1591086948659			#创建时间
+      }
+     ```
 
    - MQ配置说明
 
@@ -735,7 +762,7 @@ NOTE: 资产 = totalMoney + closeProfitLoss
       
       ```java
         # 消费组ID 
-        # 强平预警强平强减通知类消息group-id: GID_broker_notice, 配资到账、配资强平预警、配资强平通知类消息group-id: GID_broker_lending
+        # 强平预警强平强减通知类消息group-id: GID_broker_notice, 配资到账、配资强平预警、配资强平通知类消息group-id: GID_broker_lending, 条件单通知类消息group-id: GID_broker_order
         group-id: **********
         # 访问公钥匙
         access-key: **********
@@ -748,7 +775,7 @@ NOTE: 资产 = totalMoney + closeProfitLoss
         # 消息主题
         topic: **********
         # 消息标签
-        # 强平预警强平强减通知类消息tags: TG_broker_notice, 配资到账、配资强平预警、配资强平通知类消息tags: broker-lending-msg
+        # 强平预警强平强减通知类消息tags: TG_broker_notice, 配资到账、配资强平预警、配资强平通知类消息tags: broker-lending-msg, 条件单通知类消息tags: TG_order_notice
         tags:**********
       ```
   

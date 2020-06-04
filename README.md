@@ -100,3 +100,6 @@
            index index.html;
            try_files $uri $uri/ /contract/index.html;
    
+
+## 更新记录
+[变更记录](changeRecords.md)

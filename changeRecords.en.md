@@ -1,4 +1,4 @@
-*Read this in other languages: [简体中文](changeRecord.md)*
+*Read this in other languages: [简体中文](changeRecords.md)*
 
 ### V1.0.0 20191105
 * h5 is based on react.js 

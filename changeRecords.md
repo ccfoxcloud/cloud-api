@@ -1,4 +1,4 @@
-*用其他语言阅读: [English](changeRecord.en.md)*
+*用其他语言阅读: [English](changeRecords.en.md)*
 
 ### V1.0.0 20191105
 * h5使用react.js构建

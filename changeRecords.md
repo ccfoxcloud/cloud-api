@@ -1,3 +1,5 @@
+*用其他语言阅读: [English](changeRecord.en.md)*
+
 ### V1.0.0 20191105
 * h5使用react.js构建
 * pc使用vue.js 构建

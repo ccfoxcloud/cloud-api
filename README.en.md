@@ -60,7 +60,7 @@ Before using our cloud API, few steps need to be taken:
 
 **_NOTE:_**
 
-[Front-end](https://github.com/ccfox-com/cloud) which is the GitHub private library，Registration is required if there is no github account, then submit the application(mainly about the github account) to ccfox expert to apply the authorization，ccfox experts will finish the process asap then authorise your github account to visit and download the code.
+[Front-end](https://github.com/ccfox-com/cloud) which is the GitHub private repository，Registration is required if there is no github account, then submit the application(mainly about the github account) to ccfox expert to apply the authorization，ccfox experts will finish the process asap then authorise your github account to visit and download the code.
 
 ## Tips for Contract list configuration
 

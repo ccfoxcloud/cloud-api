@@ -110,4 +110,4 @@ Before using our cloud API, few steps need to be taken:
    
 
 ## Update Records
-[Change Records](changeRecords.en.md)
+[ChangeLog](changeRecords.en.md)

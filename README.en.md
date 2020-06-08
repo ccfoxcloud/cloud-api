@@ -27,7 +27,7 @@ What will bring to you:
 
 - High proportion fee sharing from back end, the best way to convert your traffic into real money
 - High quality contract trading experience, compatible with Okex and Bitmex.
-- High level risk management, User Retention Ratios could keep increasing!
+- High level risk control, User Retention Ratios could keep increasing!
 - Pre-training plus constant support from us will help you to be successful！
 
 
@@ -36,7 +36,7 @@ What will bring to you:
 Before using our cloud API, few steps need to be taken:
 
 1. A transfer function and individual contract transaction account for each registered user are required in **your system/application**.
-- Make sure funds could be transferred between normal account and contract transaction account.
+   - Make sure funds could be transferred between normal account and contract transaction account.
 2. A confirmation function in **your system/application** for user to allow the contract trading, then:
    - After the confirmation of user agreement is received, helping this user to register a new account in **our system** by using the **child account registration**  (#####Child Account Registration)API. This new registered account will be a child account under your **parent business account**.
 3. A fund transfer function in **your application/system**.

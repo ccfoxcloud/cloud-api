@@ -1,6 +1,6 @@
 *用其他语言阅读: [English](README.en.md)*
 
-# **_欢迎来到 ccofx 合约云项目，[线上 Demo](https://mcloud.ccfox.com)_**
+# **_欢迎来到 ccfox 合约云项目，[线上 Demo](https://mcloud.ccfox.com)_**
 
 只需一周，拥有专属于您的合约交易功能
 

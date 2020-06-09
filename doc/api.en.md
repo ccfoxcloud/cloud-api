@@ -1,13 +1,13 @@
-- [API](#api%e5%af%b9%e6%8e%a5)
-  - [Signature](#%e7%ad%be%e5%90%8d)
-    - [Description](#%e8%af%b4%e6%98%8e)
-    - [Applying for create API Key](#%e7%94%b3%e8%af%b7%e5%88%9b%e5%bb%ba-api-key)
-    - [Signature step](#%e7%ad%be%e5%90%8d%e6%ad%a5%e9%aa%a4)
-    - [Signature demo](#%e7%ad%be%e5%90%8ddemo)
-  - [Public API](#%e5%9f%ba%e7%a1%80%e6%8e%a5%e5%8f%a3)
-  - [Assets ](#%e5%9f%ba%e7%a1%80%e6%8e%a5%e5%8f%a3)
-  - [API接口](#api%e6%8e%a5%e5%8f%a3)
-    - [Child Account Registeration](#%e5%ad%90%e8%b4%a6%e5%8f%b7%e6%b3%a8%e5%86%8c)
+- [API](#api)
+  - [Signature](#signature)
+    - [Overview](#oveview)
+    - [Applying for create an API Key](#applying-for-create-an-api-key)
+    - [Before Requesting](#before-requesting)
+    - [Signature demo](#signature-demo)
+  - [Public API](#public-api)
+  - [Account Asset Equity](#account-asset-equity)
+  - [API interface](#api-interface)
+    - [Child Account Registeration](#child-account-registration)
     - [Child Account Login](#%e5%ad%90%e8%b4%a6%e5%8f%b7%e7%99%bb%e5%bd%95)
     - [Inquire Child Account Futures Order History](#%e6%9f%a5%e8%af%a2%e5%ad%90%e8%b4%a6%e6%88%b7%e6%9c%9f%e8%b4%a7%e5%8e%86%e5%8f%b2%e5%a7%94%e6%89%98)
     - [Inquire Child Account Futures Ord3er History](#%e6%9f%a5%e8%af%a2%e5%ad%90%e8%b4%a6%e6%88%b7%e6%9c%9f%e8%b4%a7%e5%8e%86%e5%8f%b2%e6%88%90%e4%ba%a4)
@@ -149,8 +149,7 @@ Currency API https://apitest.ccfox.com/future/queryCommonInfo
 | ├─ listTime              | number    | yes     |        | List Time                                                 |                   |
 | ├─ createTime            | number    | yes     |        | Create Time                                                 |                   |
 | ├─ contractType          | number    | yes     |        | contract type, 1 for fixed-term contract, 2 for perpetual                                   |                   |
-| ├─ deliveryType          | number    | yes     |        | delivery type, 1 for cash, 2 for physical 
-                           |                   |
+| ├─ deliveryType          | number    | yes     |        | delivery type, 1 for cash, 2 for physical                   |                   |
 | ├─ deliveryPeriod        | number    | yes     |        | delivery period, 0 for perpetual, 1 for day, 2 for week, 3 for month                                 |                   |
 | ├─ contractSide          | number    | yes     |        | Contract side, 1 positive, 2 reverse                                   |                   |
 | ├─ contractUnit          | number    | yes     |        | Contract Unit                                                 |                   |
@@ -214,7 +213,7 @@ API： https://apitest.ccfox.com/futureAsset/queryAccountEquity
 
 
 
-## API 
+## API interface
 
 ### Child account registration
 

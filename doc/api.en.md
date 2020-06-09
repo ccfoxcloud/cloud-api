@@ -232,15 +232,13 @@ verifications：
 
 **Headers**
 
-| Parameter Name     | Value                                                           | Is required | Example                                                             | Description                                                                         |
-| ------------ | ---------------------------------------------------------------- | -------- | ---------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| Content-Type | application/json                                                 | Yes       |                                                                  |                                                                              |
-| signature    | 1dec55ac42478858d322cf841f22522bb47752bbd5d330adbe84db9cf5854733 | Yes       | 1dec55ac42478858d322cf841f22522bb47752bbd5d330adbe84db9cf5854733 | Signature，生成方式：method：encryption on body parameter by sha256（Ask the technical staffs for the demo document） |
-| apiKey       | 61ba5fc3-2384-472e-8712-e5f83b358815                             | Yes       | 61ba5fc3-2384-472e-8712-e5f83b358815                             |  
-API key：unique key for each business parter （need to be applied）
-                      |
-| apiExpires   | 1561708654079                                                    | Yes       | 1561708654079                                                    | API expire time（timestamp：millisecond）                                      |
-| UNIQUE       | XXXX                                                             | Yes       |                                                                  | uuid, this id will be unique in each request, to avoid duplicate submission                                  |
+| Parameter Name | Value                                                            | Is required | Example                                                          | Description                                                                  |
+| -------------- | ---------------------------------------------------------------- | ----------- | ---------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| Content-Type   | application/json                                                 | Yes         |                                                                  |                                                                              |
+| signature      | 1dec55ac42478858d322cf841f22522bb47752bbd5d330adbe84db9cf5854733 | Yes         | 1dec55ac42478858d322cf841f22522bb47752bbd5d330adbe84db9cf5854733 | Signature，generation method：encryption on body parameter by sha256（Ask the technical staffs for the demo document）|
+| apiKey         | 61ba5fc3-2384-472e-8712-e5f83b358815                             | Yes         | 61ba5fc3-2384-472e-8712-e5f83b358815                             |  API key：unique key for each business parter （need to be applied）         |
+| apiExpires     | 1561708654079                                                    | Yes         | 1561708654079                                                    | API expire time（timestamp：millisecond）                                    |
+| UNIQUE         | XXXX                                                             | Yes         |                                                                  | uuid, this id will be unique in each request, to avoid duplicate submission  |
 
 **Body**
 

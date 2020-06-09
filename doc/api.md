@@ -20,6 +20,8 @@
     - [查询子用户合约资产快照](#%e6%9f%a5%e8%af%a2%e5%ad%90%e7%94%a8%e6%88%b7%e5%90%88%e7%ba%a6%e8%b5%84%e4%ba%a7%e5%bf%ab%e7%85%a7)
   - [B端mq对接](#b%e7%ab%afmq%e5%af%b9%e6%8e%a5)
 
+*用其他语言阅读: [English](api.en.md)*
+
 # API对接
 
 - 生产环境地址：请找ccfox运营人员获取生产环境接入地址，并向ccfox提供访问ip以添加白名单。

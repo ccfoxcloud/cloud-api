@@ -1,6 +1,6 @@
 *Read this in other languages: [简体中文](README.md)*
 
-# **_Welcome to ccofx Cloud Contract project，[Online Demo](https://mcloud.ccfox.com)_**
+# **_Welcome to ccfox Cloud Contract project，[Online Demo](https://mcloud.ccfox.com)_**
 
 Your exclusive contract trading function only requiring few API，
 fast deployment that only cost one week!

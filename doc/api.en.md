@@ -312,15 +312,8 @@ verifications：
 - Query：
 
 | Parameter Name | Is required | Example                      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| :------- | :------- | :------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| filter   | Yes       | %7B%22userId%22%3A+275%7D | attention： parameter filter=%7B%22userId%22%3A275%7D，value is URLEcode， Convertion to upper case is required after coding, e.g. %3a to %3A result value：{"userId":275} 
-userId（int）：user ID， required 
-contractId（int）：contract ID， not required 
-side（int）：pre/post page, not required 
-startDate（long）：start timestamp, not required 
-endDate（long）：end timestamp, not required 
-pageNum（int）：current page, not required 
-pageSize（int）：display page, not required
+| :------------- | :---------- | :--------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| filter         | Yes         | %7B%22userId%22%3A+275%7D    | attention： parameter filter=%7B%22userId%22%3A275%7D，value is URLEcode， Convertion to upper case is required after coding, e.g. %3a to %3A result value：{"userId":275} userId（int）：user ID， required contractId（int）：contract ID， not required side（int）：pre/post page, not required startDate（long）：start timestamp, not required endDate（long）：end timestamp, not required pageNum（int）：current page, not required pageSize（int）：display page, not required
   |
 
 
@@ -329,25 +322,25 @@ pageSize（int）：display page, not required
 - Return Data
 
 | Name                | Type      | Is required | Default Value | Description                                                                                                                                                            | Other Info          |
-| ------------------- | --------- | -------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
-| code                | number    | No   |        |                                                                                                                                                                 |                   |
-| msg                 | string    | No   |        |                                                                                                                                                                 |                   |
-| data                | object [] | No   |        |                                                                                                                                                                 | item Type: object |
-| ├─ applId           | number    | yes     |        | 2: Futures                                                                                                                                                         |                   |
-| ├─ timestamp        | number    | yes     |        | Timestamp When ordering                                                                                                                                                        |                   |
-| ├─ userId           | number    | yes     |        | User ID                                                                                                                                                          |                   |
-| ├─ contractId       | number    | yes     |        | Contract ID                                                                                                                                                        |                   |
-| ├─ uuid             | string    | yes     |        | Order ID                                                                                                                                                        |                   |
-| ├─ side             | number    | yes     |        | Side of Bid or Ask，1 bid，-1 ask                                                                                                                                             |                   |
-| ├─ price            | string    | yes     |        | Order Price                                                                                                                                                        |                   |
-| ├─ quantity         | string    | yes     |        | Order Quantity                                                                                                                                                        |                   |
-| ├─ orderType        | number    | yes     |        | Order Type，1（Limit），3（Market）                                                                                                                              |                   |
-| ├─ orderSubType     | number    | yes     |        | Order sub Type 0（Default Value），1（Passive order），2（Conditional Order Market Price），3（Conditional Price Index Price），4（Conditional Price Mark Price）                                                  |                   |
-| ├─ timeInForce      | number    | yes     |        | Order time in force type：1（Available before cancelled），2（match immediately and rest will be cancelled，not actived），3（all matched or canceled，not actived），4（first five matched and rest will be canceled，not actived），5（first five matched and rest will turn to limit price，not actived） |                   |
-| ├─ minimalQuantity  | string    | yes     |        | Minimal quantity                                                                                                                                                      |                   |
-| ├─ stopPrice        | string    | yes     |        | Stop profit & loss price                                                                                                                                                      |                   |
-| ├─ stopCondition    | number    | yes     |        | Stop profit and loss symbol 1（stop profit，not actived），2（stop loss,not actived），3（only deleverage，not actived）                                                                                          |                   |
-| ├─ orderStatus      | number    | yes     |        | Order status 0: not apply,1:applying,2:failed apply, 3:partial matched ,4:all matched,5:partial cancelled, 6:all cancelled, 7:cancelling,8:Invalid, 11:orders that condition higher than cache ,12:orders that condition lower than cache.             |                   |
+| ------------------- | --------- | ----------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| code                | number    | No          |               |                                                                                                                                                                        |                   |
+| msg                 | string    | No          |               |                                                                                                                                                                        |                   |
+| data                | object [] | No          |               |                                                                                                                                                                        | item Type: object |
+| ├─ applId           | number    | yes         |               | 2: Futures                                                                                                                                                             |                   |
+| ├─ timestamp        | number    | yes         |               | Timestamp When ordering                                                                                                                                                |                   |
+| ├─ userId           | number    | yes         |               | User ID                                                                                                                                                          |                   |
+| ├─ contractId       | number    | yes         |               | Contract ID                                                                                                                                                        |                   |
+| ├─ uuid             | string    | yes         |               | Order ID                                                                                                                                                        |                   |
+| ├─ side             | number    | yes         |               | Side of Bid or Ask，1 bid，-1 ask                                                                                                                                             |                   |
+| ├─ price            | string    | yes         |               | Order Price                                                                                                                                                        |                   |
+| ├─ quantity         | string    | yes         |               | Order Quantity                                                                                                                                                        |                   |
+| ├─ orderType        | number    | yes         |               | Order Type，1（Limit），3（Market）                                                                                                                              |                   |
+| ├─ orderSubType     | number    | yes         |        | Order sub Type 0（Default Value），1（Passive order），2（Conditional Order Market Price），3（Conditional Price Index Price），4（Conditional Price Mark Price）            |                   |
+| ├─ timeInForce      | number    | yes         |        | Order time in force type：1（Available before cancelled），2（match immediately and rest will be cancelled，not actived），3（all matched or canceled，not actived），4（first five matched and rest will be canceled，not actived），5（first five matched and rest will turn to limit price，not actived） |                   |
+| ├─ minimalQuantity  | string    | yes         |        | Minimal quantity                                                                                                                                                      |                   |
+| ├─ stopPrice        | string    | yes         |        | Stop profit & loss price                                                                                                                                                      |                   |
+| ├─ stopCondition    | number    | yes         |        | Stop profit and loss symbol 1（stop profit，not actived），2（stop loss,not actived），3（only deleverage，not actived）                                                      |                   |
+| ├─ orderStatus      | number    | yes         |        | Order status 0: not apply,1:applying,2:failed apply, 3:partial matched ,4:all matched,5:partial cancelled, 6:all cancelled, 7:cancelling,8:Invalid, 11:orders that condition higher than cache ,12:orders that condition lower than cache.             |                   |
 | ├─ makerFeeRatio    | string    | yes     |        | maker Fee Ratio                                                                                                                                                  |                   |
 | ├─ takerFeeRatio    | string    | yes     |        | taker Fee Ratio                                                                                                                                                  |                   |
 | ├─ clOrderId        | string    | yes     |        | Client Order ID                                                                                                                                                    |                   |
@@ -357,9 +350,9 @@ pageSize（int）：display page, not required
 | ├─ matchTime        | number    | yes     |        | Matched time                                                                                                                                                        |                   |
 | ├─ positionEffect   | number    | yes     |        | Position effect 1 for open 2 for close                                                                                                                                            |                   |
 | ├─ marginType       | number    | yes     |        | Margin Type，1 Cross ，2 for isolated                                                                                                                                        |                   |
-| ├─ marginRate       | string    | yes     |        | Margin ratio（ The reciprocal is the times of leverage）                                                                                                                                    |                   |
+| ├─ marginRate       | string    | yes     |        | Margin ratio（ The reciprocal is the times of leverage）                                                                                                                            |                   |
 | ├─ fcOrderId        | string    | yes     |        | The order Id of which is liquidated，not null for liquidation order               |                   |
-| ├─ deltaPrice       | string    | yes     |        | Difference between mark price and order price                                                                                                                                              |                   |
+| ├─ deltaPrice       | string    | yes     |        | Difference between mark price and order price                                     |                   |
 | ├─ frozenPrice      | string    | yes     |        | Price of funding                          |                   |
 
 ### Inquire Child futures Matches Records
@@ -382,15 +375,7 @@ pageSize（int）：display page, not required
 
 | Parameter Name | Is required | Example                      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | :------- | :------- | :------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| filter   | Yes       | %7B%22userId%22%3A+275%7D | attention： parameter filter=%7B%22userId%22%3A275%7D，value is URLEcode， Convertion to upper case is required after coding, e.g. %3a to %3A result value：{"userId":275} 
-userId（int）：user ID， required 
-contractId（int）：contract ID， not required 
-side（int）：pre/post page, not required 
-startDate（long）：start timestamp, not required 
-endDate（long）：end timestamp, not required 
-pageNum（int）：current page, not required 
-pageSize（int）：display page, not required
- |
+| filter   | Yes       | %7B%22userId%22%3A+275%7D | attention： parameter filter=%7B%22userId%22%3A275%7D，value is URLEcode， Convertion to upper case is required after coding, e.g. %3a to %3A result value：{"userId":275} userId（int）：user ID， required contractId（int）：contract ID， not required side（int）：pre/post page, not required startDate（long）：start timestamp, not required endDate（long）：end timestamp, not required pageNum（int）：current page, not required pageSize（int）：display page, not required |
 
 
 
@@ -478,9 +463,7 @@ pageSize（int）：display page, not required
 
 | Parameter Name | Is required | Example                                            | Description                                                                                                                                                                                                                                                                                                                              |
 | -------- | -------- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| filter   | Yes       | {"applId":5,"queryUserId":"129","currencyId":1} | Attention： parameter filter={"applId":5,"queryUserId":"129","currencyId":1}，value is URLEcode， conversion to upper case is required. E.g. {"applId":5,"queryUserId":"129","currencyId":1}  applId（int）: 5：my wallet，2: future wallet， reuqired queryUserId（int）：user ID, check this user assets， required
- currencyId（int）：currency ID not required
- |
+| filter   | Yes       | {"applId":5,"queryUserId":"129","currencyId":1} | Attention： parameter filter={"applId":5,"queryUserId":"129","currencyId":1}，value is URLEcode， conversion to upper case is required. E.g. {"applId":5,"queryUserId":"129","currencyId":1}  applId（int）: 5：my wallet，2: future wallet， reuqired queryUserId（int）：user ID, check this user assets， required currencyId（int）：currency ID not required |
 
 - Return Data
 
@@ -557,12 +540,7 @@ Verification:
 
 | Parameter Name | Is required | Example                                                                | Description                                                                                                                                                                                                                                                                        |
 | -------- | -------- | ------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| filter   | Yes       |  Value is URLEcode， conversion to upper case is required after coding，e.g. %3a to %3A, result value is：{"currencyId":7,"statDate":"20200109"},
-Parameters：
-currencyId(required,  currency ID),
-statDate(required status date，e.g. 20200109),
-pageNum(not required current page，default：1),
-pageSize(not required ，page size default：1000，take1000 when it is over)
+| filter   | Yes       |  Value is URLEcode， conversion to upper case is required after coding，e.g. %3a to %3A, result value is：{"currencyId":7,"statDate":"20200109"}, Parameters： currencyId(required,  currency ID), statDate(required status date，e.g. 20200109), pageNum(not required current page，default：1), pageSize(not required ，page size default：1000，take1000 when it is over)
  |
 
 - Return Data
@@ -601,13 +579,7 @@ pageSize(not required ，page size default：1000，take1000 when it is over)
 
 | Parameter Name | Is required | Example                                                                | Description                                                                                                                                                                                                                                                                        |
 | -------- | -------- | ------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| filter   | Yes       | filter=%7B%22currencyId%22%3A7%2C%22statDate%22%3A%2220200109%22%7D | Value is URLEcode， conversion to upper case is required after coding，e.g. ：%3a to %3A, result value：{"currencyId":7,"statDate":"20200109"},
-Parameters：
-currencyId(required currency ID),
-statDate(required status date，e.g. ：20200109),
-pageNum(not required currency page，default：1),
-pageSize(not required page size，default：1000，take 1000 when it is over)
-|
+| filter   | Yes       | filter=%7B%22currencyId%22%3A7%2C%22statDate%22%3A%2220200109%22%7D | Value is URLEcode， conversion to upper case is required after coding，e.g. ：%3a to %3A, result value：{"currencyId":7,"statDate":"20200109"}, Parameters： currencyId(required currency ID), statDate(required status date，e.g. ：20200109), pageNum(not required currency page，default：1), pageSize(not required page size，default：1000，take 1000 when it is over) |
 
 - Return Data
 
@@ -643,13 +615,7 @@ pageSize(not required page size，default：1000，take 1000 when it is over)
 
 | Parameter Name | Is required | Example                                                                | Description                                                                                                                                                                                                                                                                        |
 | -------- | -------- | ------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| filter   | Yes       | filter=%7B%22currencyId%22%3A7%2C%22statDate%22%3A%2220200109%22%7D | Value is URLEcode, conversion to upper case is required after coding，e.g. %3a to %3A,result value is：{"currencyId":7,"statDate":"20200109"},
-Parameters：
-currencyId(required currency ID),
-statDate(required status date，e.g. 20200109),
-pageNum(not required current page，default：1),
-pageSize(not required page size，default：1000，take 1000 when it is over)
-|
+| filter   | Yes       | filter=%7B%22currencyId%22%3A7%2C%22statDate%22%3A%2220200109%22%7D | Value is URLEcode, conversion to upper case is required after coding，e.g. %3a to %3A,result value is：{"currencyId":7,"statDate":"20200109"}, Parameters： currencyId(required currency ID), statDate(required status date，e.g. 20200109), pageNum(not required current page，default：1), pageSize(not required page size，default：1000，take 1000 when it is over) |
 
 - Return Data
 
@@ -687,12 +653,7 @@ pageSize(not required page size，default：1000，take 1000 when it is over)
 
 | Parameter Name | Is required | Example                              | Description                                                                                                                                                                                                            |
 | -------- | -------- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| filter   | Yes       | filter=%7b%22currencyId%22%3a1%7d |  
-Value is URLEcode, conversion to upper case is required after coding，e.g.：%3a to %3A,result value is {"currencyId":1}, parameter：
-currencyId(required currency ID),
-pageNum(not required current page，default：1),
-pageSize(not required page size，default：1000，take 1000 when it is over)
- |
+| filter   | Yes       | filter=%7b%22currencyId%22%3a1%7d |  Value is URLEcode, conversion to upper case is required after coding，e.g.：%3a to %3A,result value is {"currencyId":1}, parameter： currencyId(required currency ID), pageNum(not required current page，default：1), pageSize(not required page size，default：1000，take 1000 when it is over) |
 
 - Return Data
 

@@ -7,9 +7,9 @@
   - [Public API](#public-api)
   - [Account Asset Equity](#account-asset-equity)
   - [API interface](#api-interface)
-    - [Child Account Registeration](#child-account-registration)
-    - [Child Account Login](#%e5%ad%90%e8%b4%a6%e5%8f%b7%e7%99%bb%e5%bd%95)
-    - [Inquire Child Account Futures Order History](#%e6%9f%a5%e8%af%a2%e5%ad%90%e8%b4%a6%e6%88%b7%e6%9c%9f%e8%b4%a7%e5%8e%86%e5%8f%b2%e5%a7%94%e6%89%98)
+    - [Sub Account Registeration](#sub-account-registration)
+    - [Sub Account Login](#sub-account-login)
+    - [Inquire Sub Account Futures Order History](#inquire-sub-account-futures-order-history)
     - [Inquire Child Account Futures Ord3er History](#%e6%9f%a5%e8%af%a2%e5%ad%90%e8%b4%a6%e6%88%b7%e6%9c%9f%e8%b4%a7%e5%8e%86%e5%8f%b2%e6%88%90%e4%ba%a4)
     - [Inquire Transfer Status](#%e6%9f%a5%e8%af%a2%e8%bd%ac%e8%b4%a6%e7%8a%b6%e6%80%81)
     - [Inquire Assets](#%e8%b5%84%e4%ba%a7%e6%9f%a5%e8%af%a2)
@@ -215,7 +215,7 @@ API： https://apitest.ccfox.com/futureAsset/queryAccountEquity
 
 ## API interface
 
-### Child account registration
+### Sub account registration
 
 - Basic Info
 
@@ -259,7 +259,7 @@ verifications：
 | msg  | string | yes     |        | Return Message                       |          |
 | data | null   | yes     |        |                                |          |
 
-### 子账号登录
+### Sub account login
 
 
 
@@ -296,7 +296,7 @@ verifications：
 | ├─ scope         | string | yes     |        | Scope                               |          |
 | ├─ userId        | number | yes     |        | user id                         |          |
 
-### Inquire Child account futures contract records
+### Inquire Sub Account Futures Order History
 
 
 
@@ -313,8 +313,7 @@ verifications：
 
 | Parameter Name | Is required | Example                      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | :------------- | :---------- | :--------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| filter         | Yes         | %7B%22userId%22%3A+275%7D    | attention： parameter filter=%7B%22userId%22%3A275%7D，value is URLEcode， Convertion to upper case is required after coding, e.g. %3a to %3A result value：{"userId":275} userId（int）：user ID， required contractId（int）：contract ID， not required side（int）：pre/post page, not required startDate（long）：start timestamp, not required endDate（long）：end timestamp, not required pageNum（int）：current page, not required pageSize（int）：display page, not required
-  |
+| filter         | Yes         | %7B%22userId%22%3A+275%7D    | attention： parameter filter=%7B%22userId%22%3A275%7D，value is URLEcode， Convertion to upper case is required after coding, e.g. %3a to %3A result value：{"userId":275} userId（int）：user ID， required contractId（int）：contract ID， not required side（int）：pre/post page, not required startDate（long）：start timestamp, not required endDate（long）：end timestamp, not required pageNum（int）：current page, not required pageSize（int）：display page, not required |
 
 
 

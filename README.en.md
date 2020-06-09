@@ -38,15 +38,15 @@ Before using our cloud API, few steps need to be taken:
 1. A transfer function and individual contract transaction account for each registered user are required in **your system/application**.
    - Make sure funds could be transferred between normal account and contract transaction account.
 2. A confirmation function in **your system/application** for user to allow the contract trading, then:
-   - After the confirmation of user agreement is received, helping this user to register a new account in **our system** by using the **child account registration**  (#####Child Account Registration)API. This new registered account will be a child account under your **parent business account**.
+   - After the confirmation of user agreement is received, helping this user to register a new account in **our system** by using the [child account registration](https://github.com/ccfox-com/cloud-api/blob/master/doc/api.en.md#child%20account%20registration) API. This new registered account will be a child account under your **parent business account**.
 3. A fund transfer function in **your application/system**.
    - Fund transfer could be done between normal account and contract transaction account.
-   - When a user transfers the fund from a normal account to a **contract transaction account** in **your system/application**, the **transferring API**(#####transfer) will be invoked in our system for transferring the fund from your parent business account to the user's child account.
+   - When a user transfers the fund from a normal account to a **contract transaction account** in **your system/application**, the [transferring API](https://github.com/ccfox-com/cloud-api/blob/master/doc/api.en.md#transferring%20API) will be invoked in our system for transferring the fund from your parent business account to the user's child account.
    - Pre-deposit is recommended for a better user experience due to long loading time of blockchain transactions.
-   - Regular fund balancing between **your application/system** and **your parent business account** would be necessary. Therefore, the **assets checking API**(#####assets checking)  might be useful to check your parent business account and those child accounts under your parent account.
+   - Regular fund balancing between **your application/system** and **your parent business account** would be necessary. Therefore, the [assets checking API](https://github.com/ccfox-com/cloud-api/blob/master/doc/api.en.md#assets%20checking%20API) might be useful to check your parent business account and those child accounts under your parent account.
 4. Embed our front-end trading page into **your system/application** we prepared for you.
-   - Invoke the API of **Login function**(#####Child account login) for users to login in **our system/application** when users access the **front-end trading page**.
-5. The user-related notification (e.g. deleveraging or liquidated) will be pushed by MQ(message queue), thus you may need to adjust your system/application to adapt the configuration of the **business MQ**(#####Business MQ).The template is provided in the project [notificationTemplate](通知模板.csv)
+   - Invoke the API of [Login function](https://github.com/ccfox-com/cloud-api/blob/master/doc/api.en.md#Login%20function) for users to login in **our system/application** when users access the **front-end trading page**.
+5. The user-related notification (e.g. deleveraging or liquidated) will be pushed by MQ(message queue), thus you may need to adjust your system/application to adapt the configuration of the [business MQ](https://github.com/ccfox-com/cloud-api/blob/master/doc/api.md#business%20MQ).The template is provided in the project [notificationTemplate](通知模板.csv)
 
 ## Demograph
 

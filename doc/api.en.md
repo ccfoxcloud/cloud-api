@@ -678,10 +678,9 @@ NOTE: 资产 = totalMoney + closeProfitLoss
 	      
 ## Business Message Queue
 
-  - How to access
-    <br>Message Queue is mainly used to store the notification message generated during the future contract transaction. Matching is required between the configuration of message queue and exchange.
-</br>
-   - details
+  - Description 
+    <br>Message Queue is mainly used to store the notification message generated during the future contract transaction. Matching is required between the configuration of message queue and exchange.  </br>
+  - details
    Message format：
      ```
       {
@@ -701,7 +700,7 @@ NOTE: 资产 = totalMoney + closeProfitLoss
       //  margin_rate  Margin rate，margin rate，the value is expanded to 10^18，it needs to be reduced on the business partner's application/system.
       //  trigger_type Type，1：Alert， 2：Liquidated，3：Deleveraging, 4: Deleveraging opponent
       ``` 
-   - Notification Message Details
+  - Notification Message Details
    Lending Message format：
      ```
       {
@@ -713,7 +712,7 @@ NOTE: 资产 = totalMoney + closeProfitLoss
         "time":154804153000             #time, millisecond
       }
      ```
-   - Notification Message Details  
+  - Notification Message Details  
     Lending forced-deleverageing message format：
   
      ```
@@ -738,7 +737,7 @@ NOTE: 资产 = totalMoney + closeProfitLoss
         "time":154804153000           #Time，millisecond
       }
      ```
-   - Notification Message Details  
+  - Notification Message Details  
    Conditional Order Invoked Message format：
      ```
       {
@@ -766,7 +765,7 @@ NOTE: 资产 = totalMoney + closeProfitLoss
       }
      ```
 
-   - Message Queue Configuration Description
+  - Message Queue Configuration Description
 
       The following code is MQ consuming group,contact us if assistance is needed.
       

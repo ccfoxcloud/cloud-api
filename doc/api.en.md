@@ -518,7 +518,7 @@ Verification:
 | data | object | yes     |        | Transaction no.（for check the status of transaction by clientId）|          |
 
 
-### Inquire Sub-accounnt Fee
+### Inquire Sub-account Fee
 
 
 

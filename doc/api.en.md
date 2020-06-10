@@ -37,9 +37,8 @@ All the fields notified as number, please process it as the decimal except the f
 ### Overview
 During the internet transaction, requesting API will have some potential risk. To make sure the API request is correct, all the private API are using your API key as signature to authenticate the parameter or value has been changed during the transaction.
 
-一个合法的请求由以下几部分组成：
-
 A legal requesting includes several parts：
+
 - Requesting address：refers to server address  xxx，e.g. xxx/api/v1/broker/queryAsset.
 - AccessKeyId: The Access Key in your API Key you applied.
 - Timestamp: the timestamp to verify your request, for example 1548311559. This could help to prevent third  party interception of your request, and the timestamp only available in one minute.
@@ -446,7 +445,7 @@ verifications：
 | ├─clientId       | string | yes     |        | Transfer Client Id                                                                                                              |          |
 | ├─transferStatus | number | yes     |        | Transfer status：10000, "Succeed",     10001, "Failed",     10002, "Transfering",     10003, "Verifying",     10004, "Failed to Verify "; |          |
 
-### 资产查询
+### Asset inquiry
 
 
 
@@ -674,7 +673,7 @@ Verification:
 | ├──startDate        | number | yes     |        | Start date，the latest updated date，will be updated on 23：45：00 every day |          |
 | ├──endDate          | number | yes     |        | End date，9999-12-13                          |          |
 
-NOTE: 资产 = totalMoney + closeProfitLoss
+NOTE: assets  = totalMoney + closeProfitLoss
 	      
 ## Business Message Queue
 

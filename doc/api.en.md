@@ -353,7 +353,7 @@ verifications：
 | ├─ deltaPrice       | string    | yes     |        | Difference between mark price and order price                                     |                   |
 | ├─ frozenPrice      | string    | yes     |        | Price of funding                          |                   |
 
-### Inquire Child futures Matches Records
+### Inquire sub account futures historical transactions
 
 
 

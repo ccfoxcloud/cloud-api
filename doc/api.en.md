@@ -7,18 +7,18 @@
   - [Public API](#public-api)
   - [Account Asset Equity](#account-asset-equity)
   - [API interface](#api-interface)
-    - [Sub Account Registeration](#sub-account-registration)
-    - [Sub Account Login](#sub-account-login)
-    - [Inquire Sub Account Futures Order History](#inquire-sub-account-futures-order-history)
-    - [Inquire sub account futures historical transactions](#inquire-sub-account-futures-historical-transactions)
-    - [Inquire Transfer Status](#%e6%9f%a5%e8%af%a2%e8%bd%ac%e8%b4%a6%e7%8a%b6%e6%80%81)
-    - [Inquire Assets](#%e8%b5%84%e4%ba%a7%e6%9f%a5%e8%af%a2)
-    - [Transfer](#%e8%bd%ac%e8%b4%a6)
-    - [Inquire Child Account Fee](#%e6%9f%a5%e8%af%a2%e5%ad%90%e7%94%a8%e6%88%b7%e6%89%8b%e7%bb%ad%e8%b4%b9)
-    - [Inquire Child Account Profit and Loss](#%e6%9f%a5%e8%af%a2%e5%ad%90%e7%94%a8%e6%88%b7%e7%9b%88%e4%ba%8f)
-    - [Inquire Child Account Match Amount](#%e6%9f%a5%e8%af%a2%e5%ad%90%e7%94%a8%e6%88%b7%e6%88%90%e4%ba%a4%e9%87%91%e9%a2%9d)
-    - [Inquire Child Account Assets Snapshots](#%e6%9f%a5%e8%af%a2%e5%ad%90%e7%94%a8%e6%88%b7%e5%90%88%e7%ba%a6%e8%b5%84%e4%ba%a7%e5%bf%ab%e7%85%a7)
-  - [Business Message Queue](#b%e7%ab%afmq%e5%af%b9%e6%8e%a5)
+    - [Sub-Account Registeration](#sub-account-registration)
+    - [Sub-Account Login](#sub-account-login)
+    - [Inquire Sub-account Futures Order History](#inquire-sub-account-futures-order-history)
+    - [Inquire Sub-account futures historical transactions](#inquire-sub-account-futures-historical-transactions)
+    - [Inquire Transfer Status](#inquire-transfer-status)
+    - [Inquire Assets](#inquire-assets)
+    - [Transfer](#transfer)
+    - [Inquire Sub-account Fee](#inquire-sub-account-fee)
+    - [Inquire Sub-account Profit and Loss](#inquire-sub-account-profit-and-loss)
+    - [Inquire Sub-account Match Amount](#inquire-sub-account-match-amount)
+    - [Inquire Sub-account Assets Snapshots](#inquire-sub-account-assets-snapshots)
+  - [Business Message Queue](#business-message-queue)
 
 *Read this in other languages: [简体中文](api.md)*
 
@@ -214,7 +214,7 @@ API： https://apitest.ccfox.com/futureAsset/queryAccountEquity
 
 ## API interface
 
-### Sub account registration
+### Sub-account registration
 
 - Basic Info
 
@@ -258,7 +258,7 @@ verifications：
 | msg  | string | yes     |        | Return Message                       |          |
 | data | null   | yes     |        |                                |          |
 
-### Sub account login
+### Sub-account login
 
 
 
@@ -295,7 +295,7 @@ verifications：
 | ├─ scope         | string | yes     |        | Scope                               |          |
 | ├─ userId        | number | yes     |        | user id                         |          |
 
-### Inquire Sub Account Futures Order History
+### Inquire Sub-account Futures Order History
 
 
 
@@ -413,7 +413,7 @@ verifications：
 | ├─ askPnlType        | number    | yes     |        | Ask Profit & loss Type：0 Normal matching 1 Close 2 Liquidated 3 Forced-deleverageing                             |                   |
 | ├─ askPnl            | number    | yes     |        | Ask profit 7 loss                                                           |                   |
 
-### Inquire Assets Status
+### Inquire Transfer Status
 
 
 
@@ -445,7 +445,7 @@ verifications：
 | ├─clientId       | string | yes     |        | Transfer Client Id                                                                                                              |          |
 | ├─transferStatus | number | yes     |        | Transfer status：10000, "Succeed",     10001, "Failed",     10002, "Transfering",     10003, "Verifying",     10004, "Failed to Verify "; |          |
 
-### Asset inquiry
+### Inquire Assets
 
 
 
@@ -518,7 +518,7 @@ Verification:
 | data | object | yes     |        | Transaction no.（for check the status of transaction by clientId）|          |
 
 
-### 查询子用户手续费
+### Inquire Sub-accounnt Fee
 
 
 
@@ -557,7 +557,7 @@ Verification:
 | ├──totalFee | number | yes     |        | Total Fee |          |
 
 
-### Inquire Child Profit and Loss
+### Inquire Sub-account Profit and Loss
 
 
 
@@ -595,7 +595,7 @@ Verification:
 | ├──totalProfit | number | yes     |        | Total Profit & Loss |          |
 
 
-### Inquire Child Account Match Amount
+### Inquire Sub-account Match Amount
 
 - Basic Info
 
@@ -631,7 +631,7 @@ Verification:
 | ├──matchAmt | number | yes     |        | User's Total match amount |          |
 
 
-### Inquire Child Assets Snapshots
+### Inquire Sub-account Assets Snapshots
 
 
 

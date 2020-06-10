@@ -10,7 +10,7 @@
     - [Sub Account Registeration](#sub-account-registration)
     - [Sub Account Login](#sub-account-login)
     - [Inquire Sub Account Futures Order History](#inquire-sub-account-futures-order-history)
-    - [Inquire Child Account Futures Ord3er History](#%e6%9f%a5%e8%af%a2%e5%ad%90%e8%b4%a6%e6%88%b7%e6%9c%9f%e8%b4%a7%e5%8e%86%e5%8f%b2%e6%88%90%e4%ba%a4)
+    - [Inquire sub account futures futures historical transactions](#Inquire sub account futures futures historical transactions
     - [Inquire Transfer Status](#%e6%9f%a5%e8%af%a2%e8%bd%ac%e8%b4%a6%e7%8a%b6%e6%80%81)
     - [Inquire Assets](#%e8%b5%84%e4%ba%a7%e6%9f%a5%e8%af%a2)
     - [Transfer](#%e8%bd%ac%e8%b4%a6)

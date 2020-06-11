@@ -1,7 +1,7 @@
 - [API](#api)
   - [Signature](#signature)
     - [Overview](#oveview)
-    - [Applying for create an API Key](#applying-for-create-an-api-key)
+    - [Applying for creating an API Key](#applying-for-creating-an-api-key)
     - [Before Requesting](#before-requesting)
     - [Signature demo](#signature-demo)
   - [Public API](#public-api)
@@ -57,7 +57,7 @@ var headers = {
 
 ```
 
-### Applying for create an API Key
+### Applying for creating an API Key
 
 Create a business API Key by using CRM system
 

@@ -38,7 +38,7 @@ Before using our cloud API, few steps need to be taken:
 1. A transfer function and individual contract transaction account for each registered user are required in **your system/application**.
    - Make sure funds could be transferred between normal account and contract transaction account.
 2. A confirmation function in **your system/application** for user to allow the contract trading, then:
-   - After the confirmation of user agreement is received, helping this user to register a new account in **our system** by using the [child account registration](https://github.com/ccfox-com/cloud-api/blob/master/doc/api.en.md#child%20account%20registration) API. This new registered account will be a child account under your **parent business account**.
+   - After the confirmation of user agreement is received, helping this user to register a new account in **our system** by using the [Sub-account registration](https://github.com/ccfox-com/cloud-api/blob/master/doc/api.en.md#sub-account-registration) API. This new registered account will be a child account under your **parent business account**.
 3. A fund transfer function in **your application/system**.
    - Fund transfer could be done between normal account and contract transaction account.
    - When a user transfers the fund from a normal account to a **contract transaction account** in **your system/application**, the [transferring API](https://github.com/ccfox-com/cloud-api/blob/master/doc/api.en.md#transferring%20API) will be invoked in our system for transferring the fund from your parent business account to the user's child account.

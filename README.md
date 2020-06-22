@@ -55,7 +55,8 @@
 
 ## 如何对接
 
-- [前端对接](https://github.com/ccfox-com/cloud)(GitHub 私仓，需要先申请 GitHub 权限)
+- [前端(H5版)对接](https://github.com/ccfox-com/cloud)(GitHub 私仓，需要先申请 GitHub 权限)
+- [前端(PC版)对接](https://github.com/ccfox-com/cloud-pc)(GitHub 私仓，需要先申请 GitHub 权限)
 - [服务端对接](./doc/api.md)
 - [通知模板](通知模板.csv)
 

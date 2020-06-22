@@ -54,7 +54,8 @@ Before using our cloud API, few steps need to be taken:
 
 ## how to deploy
 
-- [Front-end](https://github.com/ccfox-com/cloud/blob/master/README.en.md)(Private Repository in GitHub，submit application for permission first)
+- [Front-end(H5)](https://github.com/ccfox-com/cloud/blob/master/README.en.md)(Private Repository in GitHub，submit application for permission first)
+- [Front-end(PC)](https://github.com/ccfox-com/cloud-pc/blob/master/README.en.md)(Private Repository in GitHub，submit application for permission first)
 - [Back-end](./doc/api.en.md)
 - [NotificationTemplate](通知模板.csv)
 

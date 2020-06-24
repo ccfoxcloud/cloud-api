@@ -76,8 +76,8 @@ Formatting the request of signature calculation due to SHA256 is used to do the 
 
 ### Signature demo
 
-1. [node.js](https://github.com/ccfoxexchange/ccfox-cloud-api/blob/master/node.js)
-2. [python](https://github.com/ccfoxexchange/ccfox-cloud-api/blob/master/code.py)
+1. [node.js](https://github.com/ccfox-com/cloud-api/blob/master/demo/node.js)
+2. [python](https://github.com/ccfox-com/cloud-api/blob/master/demo/code.py)
 3. [java](https://github.com/ccfoxexchange/ccfox_api/tree/master/java/)
 
 ## Public API
@@ -790,4 +790,4 @@ NOTE: assets  = totalMoney + closeProfitLoss
   - RocketMQ Sample
     - [RocketMQ Sample url](https://help.aliyun.com/product/29530.html?spm=a2c4g.11186623.6.540.6ff139c69dmBkV)
     - [java demo](https://github.com/ccfoxexchange/rocket-consumer-client)
-    - [Notification Template](https://github.com/ccfoxexchange/ccfox-cloud-api/blob/master/%E9%80%9A%E7%9F%A5%E6%A8%A1%E6%9D%BF.xlsx)
+    - [Notification Template](https://github.com/ccfox-com/cloud-api/blob/master/通知模板.csv)

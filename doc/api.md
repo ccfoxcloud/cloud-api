@@ -72,8 +72,8 @@ API Key 包括以下两部分
 
 ### 签名demo
 
-1. [node.js](https://github.com/ccfoxexchange/ccfox-cloud-api/blob/master/node.js)
-2. [python](https://github.com/ccfoxexchange/ccfox-cloud-api/blob/master/code.py)
+1. [node.js](https://github.com/ccfox-com/cloud-api/blob/master/demo/node.js)
+2. [python](https://github.com/ccfox-com/cloud-api/blob/master/demo/code.py)
 3. [java](https://github.com/ccfoxexchange/ccfox_api/tree/master/java/)
 
 ## 基础接口

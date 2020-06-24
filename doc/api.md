@@ -787,4 +787,4 @@ NOTE: 资产 = totalMoney + closeProfitLoss
   - RocketMQ参考
     - [RocketMQ参考url](https://help.aliyun.com/product/29530.html?spm=a2c4g.11186623.6.540.6ff139c69dmBkV)
     - [java对接demo](https://github.com/ccfoxexchange/rocket-consumer-client)
-    - [通知模板参考](https://github.com/ccfoxexchange/ccfox-cloud-api/blob/master/%E9%80%9A%E7%9F%A5%E6%A8%A1%E6%9D%BF.xlsx)
+    - [通知模板参考](https://github.com/ccfox-com/cloud-api/blob/master/通知模板.csv)

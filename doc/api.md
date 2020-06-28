@@ -232,7 +232,7 @@ API Key 包括以下两部分
 | Content-Type | application/json                                                 | 是       |                                                                  |                                                                              |
 | signature    | 1dec55ac42478858d322cf841f22522bb47752bbd5d330adbe84db9cf5854733 | 是       | 1dec55ac42478858d322cf841f22522bb47752bbd5d330adbe84db9cf5854733 | 签名，生成方式：sha256对请求body参数加密（对外生成示例文档询问技术人员索要） |
 | apiKey       | 61ba5fc3-2384-472e-8712-e5f83b358815                             | 是       | 61ba5fc3-2384-472e-8712-e5f83b358815                             | API访问密钥：每个券商对应接口的标识（券商申请的apiKey）                      |
-| apiExpires   | 1561708654079                                                    | 是       | 1561708654079                                                    | API此次访问过期时间（时间戳：毫秒）                                          |
+| apiExpires   | 1561708654                                                       | 是       | 1561708654                                                       | API此次访问过期时间（时间戳：秒）                                          |
 | UNIQUE       | XXXX                                                             | 是       |                                                                  | uuid, 每次申请都需不一样的值,用于防重复提交                                  |
 
 **Body**

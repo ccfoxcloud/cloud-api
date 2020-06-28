@@ -254,6 +254,33 @@ API Key 包括以下两部分
 | msg  | string | 必须     |        | 返回消息                       |          |
 | data | null   | 必须     |        |                                |          |
 
+- 错误代码
+
+| Number | Error Message | Description |
+| ----- | ----- | ----- |
+| 102200400 | fail | 失败 |
+| 102200401 | request timeout | 请求超时 |
+| 102200402 | unknown exception code | 未知异常 |
+| 102200403 | apikey not exist | APIKEY 不存在 |
+| 102200404 | no permission | 无权限 |
+| 102200405 | signature failed | 签名失败 |
+| 102200500 | request param invalid | 参数格式不对，是否为空等 |
+| 102200501 | email format invalid | 邮箱格式校验失败 |
+| 102200502 | phone format invalid | 手机格式校验失败 |
+| 102200504 | username format invalid | 用户名称格式校验失败 |
+| 102200505 | contract id is blank | 交易对不能为空 |
+| 102200506 | applId invalid | appid验证失败 |
+| 102200507 | user id is blank | 用户ID不能为空 |
+| 102200508 | starttime and endtime invalid | 开始结束时间校验失败 |
+| 102200509 | client id format error | transferId格式校验失败 |
+| 102200510 | client id is blank | clientId不能为空 |
+| 102200511 | broker uuid is blank | brokerUuid不能为空 |
+| 102200700 | wring username or password | 用户名或密码不正确 |
+| 102200701 | pagesize exceed the limit | 分页数量超出限制数量 |
+| 102200702 | transfer request not found | 未找到该转账申请信息 |
+| 102200703 | the broker donking info not found | 未找到该券商对接信息 }
+
+
 ### 子账号登录
 
 

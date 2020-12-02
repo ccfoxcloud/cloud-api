@@ -54,14 +54,14 @@ Before using our cloud API, few steps need to be taken:
 
 ## how to deploy
 
-- [Front-end(H5)](https://github.com/ccfoxcloud/cloud/blob/master/README.en.md)(Private Repository in GitHub，submit application for permission first)
+- [Front-end(H5)](https://github.com/ccfoxcloud/cloud-h5/blob/master/README.en.md)(Private Repository in GitHub，submit application for permission first)
 - [Front-end(PC)](https://github.com/ccfoxcloud/cloud-pc/blob/master/README.en.md)(Private Repository in GitHub，submit application for permission first)
 - [Back-end](./doc/api.en.md)
 - [NotificationTemplate](通知模板.csv)
 
 **_NOTE:_**
 
-[Front-end](https://github.com/ccfoxcloud/cloud) which is the GitHub private repository，Registration is required if there is no github account, then submit the application(mainly about the github account) to ccfox expert to apply the authorization，ccfox experts will finish the process asap then authorise your github account to visit and download the code.
+[Front-end(H5)](https://github.com/ccfoxcloud/cloud-h5/blob/master/README.en.md) and [Front-end(PC)](https://github.com/ccfoxcloud/cloud-pc/blob/master/README.en.md) are GitHub private repositories. Registration is required if there is no github account, then submit the application(mainly about the github account) to ccfox expert to apply the authorization，ccfox experts will finish the process asap then authorise your github account to visit and download the code.
 
 ## Tips for Contract list configuration
 

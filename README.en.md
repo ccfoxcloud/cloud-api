@@ -38,15 +38,15 @@ Before using our cloud API, few steps need to be taken:
 1. A transfer function and individual contract transaction account for each registered user are required in **your system/application**.
    - Make sure funds could be transferred between normal account and contract transaction account.
 2. A confirmation function in **your system/application** for user to allow the contract trading, then:
-   - After the confirmation of user agreement is received, helping this user to register a new account in **our system** by using the [Sub-account registration](https://github.com/ccfox-com/cloud-api/blob/master/doc/api.en.md#sub-account-registration) API. This new registered account will be a child account under your **parent business account**.
+   - After the confirmation of user agreement is received, helping this user to register a new account in **our system** by using the [Sub-account registration](https://github.com/ccfoxcloud/cloud-api/blob/master/doc/api.en.md#sub-account-registration) API. This new registered account will be a child account under your **parent business account**.
 3. A fund transfer function in **your application/system**.
    - Fund transfer could be done between normal account and contract transaction account.
-   - When a user transfers the fund from a normal account to a **contract transaction account** in **your system/application**, the [Transferring API](https://github.com/ccfox-com/cloud-api/blob/master/doc/api.en.md#transfer) will be invoked in our system for transferring the fund from your parent business account to the user's child account.
+   - When a user transfers the fund from a normal account to a **contract transaction account** in **your system/application**, the [Transferring API](https://github.com/ccfoxcloud/cloud-api/blob/master/doc/api.en.md#transfer) will be invoked in our system for transferring the fund from your parent business account to the user's child account.
    - Pre-deposit is recommended for a better user experience due to long loading time of blockchain transactions.
-   - Regular fund balancing between **your application/system** and **your parent business account** would be necessary. Therefore, the [Inquire Assets API](https://github.com/ccfox-com/cloud-api/blob/master/doc/api.en.md#inquire-assets) might be useful to check your parent business account and those child accounts under your parent account.
+   - Regular fund balancing between **your application/system** and **your parent business account** would be necessary. Therefore, the [Inquire Assets API](https://github.com/ccfoxcloud/cloud-api/blob/master/doc/api.en.md#inquire-assets) might be useful to check your parent business account and those child accounts under your parent account.
 4. Embed our front-end trading page into **your system/application** we prepared for you.
-   - Invoke the API of [Sub-account login API](https://github.com/ccfox-com/cloud-api/blob/master/doc/api.en.md#Sub-account-login) for users to login in **our system/application** when users access the **front-end trading page**.
-5. The user-related notification (e.g. deleveraging or liquidated) will be pushed by MQ(message queue), thus you may need to adjust your system/application to adapt the configuration of the [Business Message Queue API](https://github.com/ccfox-com/cloud-api/blob/master/doc/api.md#business-message-queue).The template is provided in the project [notificationTemplate](通知模板.csv)
+   - Invoke the API of [Sub-account login API](https://github.com/ccfoxcloud/cloud-api/blob/master/doc/api.en.md#Sub-account-login) for users to login in **our system/application** when users access the **front-end trading page**.
+5. The user-related notification (e.g. deleveraging or liquidated) will be pushed by MQ(message queue), thus you may need to adjust your system/application to adapt the configuration of the [Business Message Queue API](https://github.com/ccfoxcloud/cloud-api/blob/master/doc/api.md#business-message-queue).The template is provided in the project [notificationTemplate](通知模板.csv)
 
 ## Demograph
 
@@ -54,14 +54,14 @@ Before using our cloud API, few steps need to be taken:
 
 ## how to deploy
 
-- [Front-end(H5)](https://github.com/ccfox-com/cloud/blob/master/README.en.md)(Private Repository in GitHub，submit application for permission first)
-- [Front-end(PC)](https://github.com/ccfox-com/cloud-pc/blob/master/README.en.md)(Private Repository in GitHub，submit application for permission first)
+- [Front-end(H5)](https://github.com/ccfoxcloud/cloud/blob/master/README.en.md)(Private Repository in GitHub，submit application for permission first)
+- [Front-end(PC)](https://github.com/ccfoxcloud/cloud-pc/blob/master/README.en.md)(Private Repository in GitHub，submit application for permission first)
 - [Back-end](./doc/api.en.md)
 - [NotificationTemplate](通知模板.csv)
 
 **_NOTE:_**
 
-[Front-end](https://github.com/ccfox-com/cloud) which is the GitHub private repository，Registration is required if there is no github account, then submit the application(mainly about the github account) to ccfox expert to apply the authorization，ccfox experts will finish the process asap then authorise your github account to visit and download the code.
+[Front-end](https://github.com/ccfoxcloud/cloud) which is the GitHub private repository，Registration is required if there is no github account, then submit the application(mainly about the github account) to ccfox expert to apply the authorization，ccfox experts will finish the process asap then authorise your github account to visit and download the code.
 
 ## Tips for Contract list configuration
 

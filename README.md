@@ -39,15 +39,15 @@
    - 用户的资金可以在 普通账户 和 合约交易账户 之间互相划转。
 2. 在**您的系统**准备一个为用户开通合约交易的确认功能，并：
    - 让用户勾同意选我们准备好的 合约用户协议
-   - 用户提交开通确认后，通过 [子账户注册](https://github.com/ccfox-com/cloud-api/blob/master/doc/api.md#%e5%ad%90%e8%b4%a6%e5%8f%b7%e6%b3%a8%e5%86%8c)接口为该用户在 **我们的系统** 注册账户，该账户是 **您 B 端母账户** 下的子账户。
+   - 用户提交开通确认后，通过 [子账户注册](https://github.com/ccfoxcloud/cloud-api/blob/master/doc/api.md#%e5%ad%90%e8%b4%a6%e5%8f%b7%e6%b3%a8%e5%86%8c)接口为该用户在 **我们的系统** 注册账户，该账户是 **您 B 端母账户** 下的子账户。
 3. 在 **您的系统** 中准备资金划转功能
    - 用户的资金可以在 普通账户 和 合约交易账户 之间互相划转
-   - 当用户在 **您的系统** 中，由普通账户向 **合约交易账户** 转入资金时，您通过调用我们系统的[转账接口](https://github.com/ccfox-com/cloud-api/blob/master/doc/api.md#%e8%bd%ac%e8%b4%a6)，将 B 端母账户的资金转入到 **用户的子账户**中。
+   - 当用户在 **您的系统** 中，由普通账户向 **合约交易账户** 转入资金时，您通过调用我们系统的[转账接口](https://github.com/ccfoxcloud/cloud-api/blob/master/doc/api.md#%e8%bd%ac%e8%b4%a6)，将 B 端母账户的资金转入到 **用户的子账户**中。
    - 区块链转账时间比较长，为了提升用户体验，我们建议您在母账户中预存部分资金。
-   - 您需要定期平衡 **您的网站中的资金** 和 **您在我们这边的 B 端母账户资金** ， 您可能会需要用到 [资产查询接口](https://github.com/ccfox-com/cloud-api/blob/master/doc/api.md#%e8%b5%84%e4%ba%a7%e6%9f%a5%e8%af%a2) 查询 您的 B 端母账户或者您旗下的子账户的资产情况
+   - 您需要定期平衡 **您的网站中的资金** 和 **您在我们这边的 B 端母账户资金** ， 您可能会需要用到 [资产查询接口](https://github.com/ccfoxcloud/cloud-api/blob/master/doc/api.md#%e8%b5%84%e4%ba%a7%e6%9f%a5%e8%af%a2) 查询 您的 B 端母账户或者您旗下的子账户的资产情况
 4. 将我们准备好的 **交易页面前端**嵌入到您的网站中
-   - 用户进入**交易页面前端**时，调用 [登陆接口](https://github.com/ccfox-com/cloud-api/blob/master/doc/api.md#%e5%ad%90%e8%b4%a6%e5%8f%b7%e7%99%bb%e5%bd%95)为用户在 我们的系统 登陆
-5. 用户的有关消息（强平/强减）将通过 mq 推送，需要您根据[B 端 mq 对接](https://github.com/ccfox-com/cloud-api/blob/master/doc/api.md#b%e7%ab%afmq%e5%af%b9%e6%8e%a5)自行对接去给您的用户发送消。项目里提供参考 [通知模板](通知模板.csv)
+   - 用户进入**交易页面前端**时，调用 [登陆接口](https://github.com/ccfoxcloud/cloud-api/blob/master/doc/api.md#%e5%ad%90%e8%b4%a6%e5%8f%b7%e7%99%bb%e5%bd%95)为用户在 我们的系统 登陆
+5. 用户的有关消息（强平/强减）将通过 mq 推送，需要您根据[B 端 mq 对接](https://github.com/ccfoxcloud/cloud-api/blob/master/doc/api.md#b%e7%ab%afmq%e5%af%b9%e6%8e%a5)自行对接去给您的用户发送消。项目里提供参考 [通知模板](通知模板.csv)
 
 ## 对接示意图
 
@@ -55,14 +55,14 @@
 
 ## 如何对接
 
-- [前端(H5版)对接](https://github.com/ccfox-com/cloud)(GitHub 私仓，需要先申请 GitHub 权限)
-- [前端(PC版)对接](https://github.com/ccfox-com/cloud-pc)(GitHub 私仓，需要先申请 GitHub 权限)
+- [前端(H5版)对接](https://github.com/ccfoxcloud/cloud)(GitHub 私仓，需要先申请 GitHub 权限)
+- [前端(PC版)对接](https://github.com/ccfoxcloud/cloud-pc)(GitHub 私仓，需要先申请 GitHub 权限)
 - [服务端对接](./doc/api.md)
 - [通知模板](通知模板.csv)
 
 **_NOTE:_**
 
-[前端对接](https://github.com/ccfox-com/cloud)这里是 GitHub 的私仓，如果没有 GitHub 账号的话需要先注册，再找 ccfox 技术对接人员提交表单（主要是提交 GitHub 账号）申请权限，ccfox 相关人员处理完之后才能访问并拉取相关代码。
+[前端对接](https://github.com/ccfoxcloud/cloud)这里是 GitHub 的私仓，如果没有 GitHub 账号的话需要先注册，再找 ccfox 技术对接人员提交表单（主要是提交 GitHub 账号）申请权限，ccfox 相关人员处理完之后才能访问并拉取相关代码。
 
 ## 合约列表配置事宜
 
